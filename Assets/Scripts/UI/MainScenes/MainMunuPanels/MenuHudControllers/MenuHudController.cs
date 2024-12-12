@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using UI.Abstractions.Windows;
+using UI.MainScenes.MainMunuPanels.MenuButtons;
 using UI.MainScenes.Windows;
 using UniRx;
 using Zenject;
-using UnityEngine;
 
-namespace UI.MainScenes.MainMunuPanels.MenuButtons
+namespace UI.MainScenes.MainMunuPanels.MenuHudControllers
 {
     public class MenuHudController : IInitializable, IDisposable
     {
@@ -53,7 +52,7 @@ namespace UI.MainScenes.MainMunuPanels.MenuButtons
         {
             _menuButtonsController.SwitchMenuButton(index);
 
-            if(_currentPageIndex >= 0)
+            if (_currentPageIndex >= 0)
                 _windows[_currentPageIndex].Close();
 
             _windows[index].Open();

@@ -1,17 +1,12 @@
-﻿using Models.SO.NetworkSettings;
-using Models.SO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Models.SO.MenuButtons;
+using Models.SO.NetworkSettings;
 using UnityEngine;
 using Zenject;
-using Zenject.Asteroids;
 
-namespace Assets.Scripts.Infrastructures
+namespace Infrastructures
 {
-    [CreateAssetMenu(fileName = nameof(ProjectSettingsInstaller), menuName = "Custom Installers/" +  nameof(ProjectSettingsInstaller))]
+    [CreateAssetMenu(fileName = nameof(ProjectSettingsInstaller),
+        menuName = "Custom Installers/" + nameof(ProjectSettingsInstaller))]
     public class ProjectSettingsInstaller : ScriptableObjectInstaller<ProjectSettingsInstaller>
     {
         [SerializeField] private MenuButtonsDataSo _menuButtonsDataSo;

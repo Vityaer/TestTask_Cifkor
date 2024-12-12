@@ -4,7 +4,6 @@ using DataSenders.Requests.Imps;
 using Models.ServerAnswers.Breeds;
 using Models.SO.NetworkSettings;
 using System;
-using System.Diagnostics;
 using System.Threading;
 using UI.Abstractions.Controllers;
 using UI.MainScenes.FactPanels.FactContainerViews;

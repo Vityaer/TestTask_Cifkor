@@ -1,6 +1,4 @@
-﻿using Sirenix.OdinInspector;
-using System;
-using TMPro;
+﻿using TMPro;
 using UI.Abstractions.Views;
 using UnityEngine;
 using UnityEngine.UI;

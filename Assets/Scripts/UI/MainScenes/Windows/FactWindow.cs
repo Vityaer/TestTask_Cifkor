@@ -6,7 +6,7 @@ namespace UI.MainScenes.Windows
 {
     public class FactWindow : Window
     {
-        private FactsPanelController _factsPanelController; 
+        private FactsPanelController _factsPanelController;
         private FactDataPanelController _factDataPanelController;
 
         public FactWindow(FactsPanelController factsPanelController, FactDataPanelController factDataPanelController)

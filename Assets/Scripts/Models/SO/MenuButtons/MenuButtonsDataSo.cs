@@ -3,9 +3,9 @@ using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Models.SO
+namespace Models.SO.MenuButtons
 {
-    [CreateAssetMenu(fileName = nameof(MenuButtonsDataSo), menuName = "UI/" +  nameof(MenuButtonsDataSo))]
+    [CreateAssetMenu(fileName = nameof(MenuButtonsDataSo), menuName = "UI/" + nameof(MenuButtonsDataSo))]
 
     public class MenuButtonsDataSo : SerializedScriptableObject, IMenuButtonsDataSo
     {

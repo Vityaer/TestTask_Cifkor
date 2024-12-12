@@ -1,14 +1,11 @@
 ﻿using Cysharp.Threading.Tasks;
-using DataSenders.Messages.Interfaces;
-using DataSenders.Requests.Interfaces;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using UnityEditor.PackageManager.Requests;
 using UnityEngine;
 using UnityEngine.Networking;
 
-namespace DataSenders
+namespace DataSenders.Senders
 {
     public class RequestSender : IRequestSender
     {
@@ -18,7 +15,17 @@ namespace DataSenders
             using (var request = UnityWebRequest.Get(route))
             {
                 var asyncRequest = await request.SendWebRequest().WithCancellation(token);
-                result = asyncRequest.downloadHandler.text;
+                if (asyncRequest.result == UnityWebRequest.Result.ConnectionError
+                    || asyncRequest.result == UnityWebRequest.Result.ProtocolError)
+                {
+                    Debug.Log($"Request json error: {request.error}");
+                    result = string.Empty;
+                }
+                else
+                {
+                    result = asyncRequest.downloadHandler.text;
+                }
+
                 request.Dispose();
             }
             return result;

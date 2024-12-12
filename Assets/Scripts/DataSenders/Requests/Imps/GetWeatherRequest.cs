@@ -1,5 +1,5 @@
 ﻿using DataSenders.Requests.Abstactions;
-using Models.ServerAnswers;
+using Models.ServerAnswers.Weathers;
 using System.Threading;
 
 namespace DataSenders.Requests.Imps

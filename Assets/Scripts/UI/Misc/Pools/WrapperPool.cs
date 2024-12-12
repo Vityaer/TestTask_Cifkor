@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Pool;
 
-namespace UI.Misc.WrapperPools
+namespace UI.Misc.Pools
 {
     public class WrapperPool<T>
             where T : Component

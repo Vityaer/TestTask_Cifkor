@@ -1,4 +1,4 @@
-﻿namespace Models.ServerAnswers
+﻿namespace Models.ServerAnswers.Weathers
 {
     public class Period
     {

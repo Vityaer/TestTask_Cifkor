@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using Models.MainMenuButtons;
+using System.Collections.Generic;
 
-namespace Models.MainMenuButtons
+namespace Models.SO.MenuButtons
 {
     public interface IMenuButtonsDataSo
     {

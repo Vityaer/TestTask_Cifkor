@@ -1,5 +1,4 @@
 ﻿using Abstractions.Windows;
-using System.Diagnostics;
 using UI.MainScenes.WeatherPanels;
 
 namespace UI.MainScenes.Windows

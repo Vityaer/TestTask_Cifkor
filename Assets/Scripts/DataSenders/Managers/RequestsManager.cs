@@ -1,13 +1,13 @@
 ﻿using Assets.Scripts.Common;
 using Cysharp.Threading.Tasks;
-using DataSenders.Managers;
 using DataSenders.Requests.Interfaces;
+using DataSenders.Senders;
 using System;
 using System.Collections.Generic;
 using System.Threading;
 using Utils.AsyncExtensions;
 
-namespace DataSenders
+namespace DataSenders.Managers
 {
     public class RequestsManager : IRequestsManager, IDisposable
     {

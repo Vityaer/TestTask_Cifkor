@@ -1,9 +1,9 @@
 ﻿using MainScenes.FactPanels.FactDataPanels;
 using UI.Extentions;
-using UI.MainScenes.FactPanels;
 using UI.MainScenes.FactPanels.FactDataPanels;
 using UI.MainScenes.FactPanels.MainPanels;
 using UI.MainScenes.MainMunuPanels.MenuButtons;
+using UI.MainScenes.MainMunuPanels.MenuHudControllers;
 using UI.MainScenes.WeatherPanels;
 using UI.MainScenes.Windows;
 using UnityEngine;
@@ -13,7 +13,7 @@ namespace Infrastructures
 {
     public class MainSceneUiInstaller : MonoInstaller
     {
-        [field: SerializeField] private Canvas _canvas;
+        [SerializeField] private Canvas _canvas;
 
         [Header("Panels")]
         [SerializeField] private WeatherPanelView _weatherPanelView;
@@ -40,7 +40,7 @@ namespace Infrastructures
 
             Container.BindUiView<FactsPanelController, FactsPanelView>(_factsPanelView, canvas.transform);
             Container.BindUiView<FactDataPanelController, FactDataPanelView>(_factDataPanelView, canvas.transform);
-            
+
             Container.BindUiView<MenuButtonsController, MenuButtonsView>(_menuButtonsView, canvas.transform, true);
         }
 

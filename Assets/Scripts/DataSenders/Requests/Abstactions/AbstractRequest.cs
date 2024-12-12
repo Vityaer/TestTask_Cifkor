@@ -1,6 +1,7 @@
 ﻿using Assets.Scripts.Common;
 using Cysharp.Threading.Tasks;
-using DataSenders.Messages.Interfaces;
+using DataSenders.Requests.Interfaces;
+using DataSenders.Senders;
 using Newtonsoft.Json;
 using System;
 using System.Threading;

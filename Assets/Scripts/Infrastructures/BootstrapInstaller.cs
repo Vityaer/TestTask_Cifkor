@@ -1,5 +1,5 @@
-﻿using Common;
-using DataSenders;
+﻿using DataSenders.Managers;
+using DataSenders.Senders;
 using Zenject;
 
 namespace Infrastructures

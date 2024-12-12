@@ -1,5 +1,4 @@
 ﻿using DataSenders.Requests.Interfaces;
-using System.Threading;
 
 namespace DataSenders.Managers
 {

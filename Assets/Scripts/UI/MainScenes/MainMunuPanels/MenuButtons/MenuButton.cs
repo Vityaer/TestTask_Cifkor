@@ -2,7 +2,7 @@
 using UI.Abstractions.Views;
 using UnityEngine.UI;
 
-namespace UI.MainScenes.MainMunuPanels.MenuHudButtons.MenuButtons
+namespace UI.MainScenes.MainMunuPanels.MenuButtons
 {
     public class MenuButton : UiView
     {

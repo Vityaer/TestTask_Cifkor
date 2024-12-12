@@ -1,10 +1,8 @@
-﻿using Models.MainMenuButtons;
+﻿using Models.SO.MenuButtons;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using UI.Abstractions.Controllers;
 using UI.Abstractions.Windows;
-using UI.MainScenes.MainMunuPanels.MenuHudButtons.MenuButtons;
 using UniRx;
 using UnityEngine.UI;
 

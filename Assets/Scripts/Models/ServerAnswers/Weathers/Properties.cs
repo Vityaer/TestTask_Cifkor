@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Models.ServerAnswers
+namespace Models.ServerAnswers.Weathers
 {
     public class Properties
     {

@@ -1,7 +1,6 @@
-﻿using DataSenders.Requests.Interfaces;
-using System;
+﻿using System;
 
-namespace DataSenders.Messages.Interfaces
+namespace DataSenders.Requests.Interfaces
 {
     public interface IRequestCommand<T> : IBaseRequestCommand
     {

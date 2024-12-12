@@ -1,7 +1,7 @@
 ﻿using Cysharp.Threading.Tasks;
 using DataSenders.Managers;
 using DataSenders.Requests.Imps;
-using Models.ServerAnswers;
+using Models.ServerAnswers.Weathers;
 using Models.SO.NetworkSettings;
 using System;
 using System.Threading;

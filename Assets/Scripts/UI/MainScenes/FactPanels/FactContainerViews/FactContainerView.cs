@@ -1,7 +1,6 @@
 ﻿using DG.Tweening;
 using Models.ServerAnswers.Breeds;
 using System;
-using System.Reflection;
 using TMPro;
 using UniRx;
 using UnityEngine;
@@ -45,7 +44,7 @@ namespace UI.MainScenes.FactPanels.FactContainerViews
             _tweenLoading.Kill();
             _tweenLoading = DOTween.Sequence()
                 .Append
-                (   
+                (
                     _progressRectTrasnform.DORotate
                     (
                         new Vector3(0, 0, -360),
@@ -59,6 +58,7 @@ namespace UI.MainScenes.FactPanels.FactContainerViews
 
         public void HideLoadingStatus()
         {
+            _tweenLoading.Kill();
             _progressRectTrasnform.gameObject.SetActive(false);
             _progressRectTrasnform.rotation = Quaternion.identity;
         }
